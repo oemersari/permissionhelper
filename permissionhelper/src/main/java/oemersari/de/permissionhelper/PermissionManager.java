@@ -36,25 +36,13 @@ public class PermissionManager extends Activity {
                     this.onCheckPermissionListenerListener.onDenied();
                     return PermissionMessages.DENIED;
                 } else {
-                    //Never ask again selected, or device policy prohibits the app from having that permission.
-                    // So, disable that feature, or fall back to another situation...
-
                     this.onCheckPermissionListenerListener.onDontAskAgain();
-
                     return PermissionMessages.DO_NOT_ASK_AGAIN;
                 }
-
-
             } else {
-
-
                 return null;
             }
-
-
         }
-
-
         return null;
     }
 
