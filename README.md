@@ -46,3 +46,13 @@
                 Log.i("MA", "Denied");
             }
         });
+```
+``` java
+@Override
+public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+
+  super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+  
+  permissionManager.onRequestPermissionsResult(requestCode,permissions,grantResults);
+  
+  }
