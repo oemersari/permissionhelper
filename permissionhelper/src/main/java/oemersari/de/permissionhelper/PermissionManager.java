@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Build;
 
-
 public class PermissionManager extends Activity {
     private static final int REQUEST_CODE = 54626;//random number;
     private static String manifest;
